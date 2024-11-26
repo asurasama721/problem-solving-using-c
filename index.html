@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notes"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Nova+Square&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: black;
+        font-family: "Exo 2", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Top nav-->
+    <div class="top-nav">
+      <ul>
+        <li class="menu-icon">
+          <span class="material-symbols-outlined" onclick="openNav()">
+            notes
+          </span>
+        </li>
+        <li class="logo-img" onclick="closeNav()">
+          <img src="asuralogo.jpg" alt="" />
+        </li>
+        <li class="logo-name" onclick="closeNav()">Asura's Notes</li>
+      </ul>
+    </div>
+
+    <!--Side nav-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#" style="font-size: 1.6rem; color: orange">C fundamentals</a>
+      <a href="#" onclick="showTopic(this)" value="history_of_c"
+        >History of C</a
+      >
+      <a href="#" onclick="showTopic(this)" value="application_areas"
+        >Application Areas</a
+      >
+      <a href="#" onclick="showTopic(this)" value="structure_of_a_c_program"
+        >Structure of a C Program</a
+      >
+      <a
+        href="#"
+        onclick="showTopic(this)"
+        value="c_program_development_life_cycle"
+        >C Program Development Life Cycle</a
+      >
+      <a href="#" onclick="showTopic(this)" value="functions_as_building_blocks"
+        >Functions as Building Blocks</a
+      >
+      <a href="#">C Tokens</a>
+      <a href="#">Character Set</a>
+      <a href="#">Keywords</a>
+      <a href="#">Identifiers</a>
+      <a href="#">Variables</a>
+      <a href="#">Constants</a>
+      <a href="#">Data Types</a>
+      <a href="#">Operators</a>
+      <a href="#">Expressions</a>
+      <a href="#">Types of Operators</a>
+      <a href="#">Operator precedence and Order of Evaluation</a>
+      <a href="#">Character Input and Output</a>
+      <a href="#">String Input and Output</a>
+      <a href="#">Formatted Input and Output</a>
+
+      <a href="#" style="font-size: 1.6rem; color: orange"
+        >Control Structures</a
+      >
+
+      <a href="#">Decision Making Structures</a>
+      <a href="#">Loop Control Structures</a>
+      <a href="#">Use of Break and Continue</a>
+      <a href="#">Nested Structures</a>
+      <a href="#">Unconditional Branching</a>
+
+      <a href="#" style="font-size: 1.6rem; color: orange">Functions</a>
+
+      <a href="#">Concept of Function</a>
+      <a href="#">Advantages of Modular Design</a>
+      <a href="#">Standard Library Functions</a>
+      <a href="#">User Defined Functions</a>
+      <a href="#">Recursive Functions</a>
+      <a href="#">Scope of Variables and Storage Classes</a>
+
+      <a href="#" style="font-size: 1.6rem; color: orange">Arrays</a>
+
+      <a href="#">Concept of Array</a>
+      <a href="#">Types of Arrays</a>
+      <a href="#">Array Operations</a>
+    </div>
+
+    <div id="main" class="main-container" onclick="closeNav()">
+
+      
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <script src="database.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

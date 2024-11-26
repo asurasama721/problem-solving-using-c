@@ -1,0 +1,92 @@
+/* custom scrollbar start */
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+      /* custom scrollbar end */
+      .top-nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+      .top-nav > ul {
+        
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50px 1fr auto;
+        grid-template-rows: auto;
+        box-sizing: border-box;
+        place-items: center;
+      }
+      .top-nav > ul > li {
+        list-style-type: none;
+      }
+      .menu-icon > span {
+        font-size: 45px;
+        cursor: pointer;
+      }
+      .logo-img {
+        justify-self: right;
+        margin-right: 10px;
+      }
+      .logo-img > img {
+        width: 45px;
+      }
+      .logo-name {
+        font-family: "Audiowide", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-style: normal;
+        margin-right: 40px;
+      }
+
+      /*side nav */
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+        
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 1.15rem;
+        color: #bcbcbc;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidenav a:first-child {
+        border: none;
+      }
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
